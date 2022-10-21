@@ -196,9 +196,53 @@ footer {
     font-size: 150%;
 }
 
+
+
 /* RESPONSIVE */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
+
+    .home {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home__noticia-main {
+        margin: 5px 10px 5px 0px;
+        height: 500px;
+    }
+
+    .home__noticia-main img {
+        width: 95%;
+        margin: 10px;
+    }
+
+    .home__noticia-main p {
+        font-size: 110%;
+    }
+
+    .home__noticias-secundarias {
+        display: grid;
+        grid-template-rows: 2fr 2fr 2fr 0.5fr;
+    }
+
+    .noticia-secundaria__img--home {
+        width: 150px;
+    }
+
+    .noticia-secundaria__cuerpo--home {
+        height: 110px;
+        font-size: 15px;
+    }
+
+    .btn-mas-noticias {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
 
     * {
         margin: 0px;
@@ -236,8 +280,100 @@ footer {
     .nav__item {
         font-size: 100%;
     }
-    
-/* 
+
+    /* HOME */
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        justify-items: center;
+        font-size: smaller;
+    }
+
+    .home__noticia-main {
+        margin: 2px;
+        height: 70%;
+    }
+
+    .home__noticia-main img {
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .noticia-secundaria__img--home {
+        max-width: 40%;
+        height: fit-content;
+    }
+
+    .home__noticias-secundarias__cuerpo--home {
+        height: 60%;
+    }
+
+    /* MÁS NOTICIAS */
+
+    .mas-noticias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticia-secundaria--mas-noticias {
+        height: 100px;
+        margin: 5px 10px;
+        display: flex;
+    }
+
+    .noticia-secundaria__img {
+        max-width: 130px;
+    }
+
+    .noticia-secundaria__cuerpo {
+        width: 90%;
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    main {
+        margin: 0px 0px;
+    }
+
+    header {
+        display: grid;
+        width: 100%;
+    }
+
+    .logo {
+        margin: 10px;
+        height: 40px;
+        font-size: x-large;
+        letter-spacing: 10px;
+    }
+
+    .logo--header {
+        font-size: 30px;
+        height: 45px;
+    }
+
+    .header__nav {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .nav__item {
+        font-size: 100%;
+    }
+
+    /* 
     .header__nav {
         width: 80%;
         margin: auto;
@@ -257,40 +393,86 @@ footer {
     /* HOME */
 
     .home {
+        display: flex;
+        flex-direction: column;
         margin: 15px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
         justify-items: center;
+        font-size: smaller;
     }
 
     .home__noticia-main {
         margin: 2px;
+        height: 70%;
     }
 
     .home__noticia-main img {
-        margin: 5px;
+        margin: 10px;
+        max-width: 100%;
     }
 
+    .noticia-secundaria__img--home {
+        max-width: 40%;
+        height: fit-content;
+    }
+
+    .home__noticias-secundarias__cuerpo--home {
+        height: 60%;
+    }
 
     /* MÁS NOTICIAS */
 
     .mas-noticias {
-        width: 100%;
-        grid-template-columns: 1fr;
+        display: flex;
     }
-
-    .noticia-secundaria--mas-noticias {
-        grid-template-rows: 100px;
-        margin: 5px 10px;
-        height: 90%;
-    }
-
+    
     .noticia-secundaria__cuerpo {
-        width: 90%;
         font-size: 80%;
+        padding: 20px;
+    }
+    
+    .noticia-secundaria__img {
+        max-width: 40%;
     }
 
 }
+
+@media screen and (max-width: 320px) {
+
+    /* HOME */
+
+    .home__noticias-secundarias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticia-secundaria--home {
+        height: 120px;
+    }
+
+    .noticia-secundaria__img--home {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .noticia-secundaria__cuerpo--home {
+        height: 95px;
+        width: 50%;
+        font-size: 110%;
+        overflow: hidden;
+    }
+
+    .btn-mas-noticias {
+        height: 20px;
+        width: 30%;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+}
+
+
+
+
 
 /* TRANSICIONES */
 
