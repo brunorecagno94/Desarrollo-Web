@@ -37,6 +37,9 @@ a {
     color: rgb(235, 234, 231);
 }
 
+.navbar-nav a {
+    margin: 0px 60px;
+}
 
 /* FOOTER */
 
@@ -189,6 +192,11 @@ footer {
 
 @media screen and (max-width: 1024px) {
 
+    .navbar-nav a {
+        margin: 0px 30px;
+    }    
+
+    /* HOME */
     .home {
         margin: 10px;
     }
@@ -273,6 +281,10 @@ footer {
         font-size: 30px;
     }
 
+    .navbar-nav a {
+        margin: 0px 10px;
+    }
+    
     /* HOME */
 
     .home {
