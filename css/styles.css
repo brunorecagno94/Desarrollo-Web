@@ -18,7 +18,9 @@ header {
 
 a {
     text-decoration: none;
+    color: black;
 }
+
 
 .logo {
     text-align: center;
@@ -62,7 +64,6 @@ footer {
 
 .home__noticia-main {
     margin: 5px 30px 5px 0px;
-    height: 680px;
     overflow: hidden;
     border: 1px solid rgb(185, 196, 224);
     background-color: rgb(239, 243, 252);
@@ -81,7 +82,7 @@ footer {
 
 .home__noticia-main p {
     margin: 10px;
-    height: 200px;
+    height: 80%;
     font-size: 120%;
     overflow: hidden;
 }
@@ -93,7 +94,6 @@ footer {
 }
 
 .noticia-secundaria {
-    display: grid;
     margin: 5px;
     overflow: hidden;
     border: 1px solid rgb(185, 196, 224);
@@ -109,13 +109,12 @@ footer {
 
 .noticia-secundaria__img--home {
     padding: 10px;
-    width: 40%;
-    height: auto;
+    width: 50%;
 }
 
 .noticia-secundaria__cuerpo--home {
     width: 60%;
-    height: 150px;
+    height: 180px;
     font-size: 150%;
     overflow: hidden;
 }
@@ -136,19 +135,20 @@ footer {
 .mas-noticias {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
 }
 
 .noticia-secundaria--mas-noticias {
+    display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 150px;
     align-items: center;
     margin: 10px;
 }
 
 .noticia-secundaria__cuerpo {
-    margin: 100px 0px;
+    margin: 10px 0px;
     padding: 10px 20px;
-    height: 100%;
+    height: 70%;
     overflow: hidden;
     font-size: 100%;
 }
@@ -195,7 +195,6 @@ footer {
 
     .home__noticia-main {
         margin: 5px 10px 5px 0px;
-        height: 500px;
     }
 
     .home__noticia-main img {
@@ -204,6 +203,7 @@ footer {
 
     .home__noticia-main p {
         font-size: 110%;
+        height: 80%;
     }
 
     .home__noticias-secundarias {
@@ -218,6 +218,29 @@ footer {
     .btn-mas-noticias {
         height: 40px;
         font-size: 15px;
+    }
+
+    /* MÁS NOTICIAS */
+
+    .mas-noticias {
+        height: 100vh;
+    }
+
+    .noticia-secundaria--mas-noticias {
+        display: flex;
+        margin: 5px 10px;
+        height: 90%;
+    }
+
+    .noticia-secundaria__img {
+        max-width: 130px;
+    }
+
+    .noticia-secundaria__cuerpo {
+        margin: 0px;
+        padding: 0px 20px;
+        height: 60%;
+        font-size: 80%;
     }
 }
 
@@ -283,7 +306,6 @@ footer {
     .noticia-secundaria--mas-noticias {
         display: flex;
         margin: 5px 10px;
-        height: 100px;
     }
 
     .noticia-secundaria__img {
@@ -311,7 +333,7 @@ footer {
     }
 
     /* MÁS NOTICIAS */
-    
+
     .noticia-secundaria__img {
         max-width: 40%;
     }
@@ -328,7 +350,7 @@ footer {
     .logo--header {
         letter-spacing: 3px;
     }
-    
+
     /* HOME */
 
     .home__noticias-secundarias {
