@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: whitesmoke;
-  border: inset black; }
+  background-color: whitesmoke; }
 
 main {
   margin: 20px 60px; }
