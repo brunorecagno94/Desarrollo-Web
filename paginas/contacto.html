@@ -54,21 +54,26 @@
                 <li>Lunes a viernes, 9hs - 18hs</li>
                 <li>Sábados, 9hs - 15hs</li>
         </section>
-        <form class="contacto__form">
-            <label for="nombre-completo">Nombre completo:</label>
-            <input type="text" name="nombre-completo" class="form__nombre-completo">
-
-            <label for="email">Correo electrónico</label>
-            <input type="email" name="email" class="form__correo-electronico">
-
-            <label for="tel">Teléfono:</label>
-            <input type="number" name="tel" class="form__telefono">
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="" cols="30" rows="10" class="form__mensaje"></textarea>
-
-            <input type="button" class="btn-form" value="Enviar">
-        </form>
+        <div class="contacto__linea"></div>
+        <form>
+            <div class="form-group">
+              <label for="nombre-completo">Nombre completo:</label>
+              <input type="email" class="form-control" id="nombre-completo" placeholder="Ej: Juan Pérez">
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" class="form-control" id="correo" placeholder="Ej: juanperez@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="text" class="form-control" id="telefono" placeholder="Ej: (+598)99123456">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark">Enviar</button>
+          </form>
     </main>
 
     <footer>
