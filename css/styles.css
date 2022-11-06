@@ -74,10 +74,10 @@ footer {
     .home__noticias-secundarias .btn-mas-noticias {
       display: flex;
       flex-direction: row;
-      justify-content: left;
+      justify-content: center;
       padding: 10px 20px;
       width: 40%;
-      font-size: 30px;
+      font-size: x-large;
       transition: border-width; }
       .home__noticias-secundarias .btn-mas-noticias:hover {
         border-width: 3px; }
