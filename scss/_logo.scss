@@ -1,0 +1,26 @@
+.logo {
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 20px;
+    font-family: 'Oswald', sans-serif;
+    background-color: $background-color-strong;
+    transition: text-decoration;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &--header {
+        font-size: 70px;
+        color: $logo-font-color;
+    }
+
+    &--footer {
+        @extend .logo;
+        padding-left: 10px;
+        text-decoration: none;
+        text-align: left;
+        font-size: 40px;
+        color: $logo-font-color;
+    }
+}
